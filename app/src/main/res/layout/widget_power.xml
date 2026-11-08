@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="8dp" android:background="@android:color/transparent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:gravity="center_vertical" android:orientation="horizontal"
+        android:background="@drawable/widget_glass" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/location" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ЧЕРГА 6.1 · ENERGY-UA" android:textColor="#D3DDE4" android:textSize="10sp" android:fontFamily="sans" />
+            <TextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ЗАВАНТАЖЕННЯ…" android:textColor="#F0F4F3" android:textStyle="bold" android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="end">
+            <TextView android:id="@+id/countdown" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="--:--" android:textColor="#B9E2C9" android:textSize="23sp" android:textStyle="bold" android:fontFamily="monospace" />
+            <TextView android:id="@+id/countdown_label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="очікуємо графік" android:textColor="#B9C6D0" android:textSize="9sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/timeline" android:layout_width="match_parent" android:layout_height="34dp"
+        android:layout_marginTop="3dp" android:scaleType="fitXY" android:contentDescription="Шкала відключень" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+        android:background="@drawable/widget_glass" android:paddingTop="3dp" android:paddingBottom="3dp" android:paddingStart="6dp" android:paddingEnd="6dp">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="start" android:text="00:00" android:textColor="#C5D0D9" android:textSize="9sp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:gravity="center" android:text="06:00" android:textColor="#C5D0D9" android:textSize="9sp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:gravity="center" android:text="12:00" android:textColor="#C5D0D9" android:textSize="9sp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:gravity="center" android:text="18:00" android:textColor="#C5D0D9" android:textSize="9sp" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="end" android:text="24:00" android:textColor="#C5D0D9" android:textSize="9sp" />
+    </LinearLayout>
+</LinearLayout>
